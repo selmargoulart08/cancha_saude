@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cancha de Futsal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("img_cancha.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+      color: #fff;
+    }
+
+    h1, h2, p {
+      margin-top: 0;
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    // Lógica em JavaScript
+
+    // Função para fazer uma reserva
+    function fazerReserva() {
+      // Lógica para fazer a reserva
+      alert("Sua reserva foi feita com sucesso!");
+    }
+
+    // Função para exibir o menu de salgados
+    function exibirSalgados() {
+      // Lógica para exibir os salgados disponíveis
+      alert("Confira nosso menu de salgados!");
+    }
+    
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>Bem-vindo à Cancha de Futsal "Saúde"</h1>
+  </div>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="link_para_imagem_futsal" alt="Imagem da Cancha de Futsal">
+    </div>
+
+    <h2>Sobre a Cancha de Futsal</h2>
+    <p>Localizada em um local de fácil acesso, nossa cancha de futsal é o lugar ideal para você reunir seus amigos e jogar uma partida emocionante.</p>
+
+    <h2>Agendamento e Preços</h2>
+    <p>Agende sua partida de futsal com antecedência. Entre em contato para verificar a disponibilidade e preços atualizados.</p>
+    <button class="button" onclick="fazerReserva()">Fazer Reserva</button>
+
+    <h2>Lanchonete de Salgados</h2>
+    <p>Após o jogo, venha saborear nossos deliciosos salgados feitos com ingredientes frescos e selecionados.</p>
+    <button class="button" onclick="exibirSalgados()">Ver Menu de Salgados</button>
+
+    <h2>Localização e Contato</h2>
+    <p>Estamos localizados no endereço "Av Piratini 366 Alvorada/RS". Para mais informações, entre em contato conosco:</p>
+    <ul class="contact-info">
+      <li>Telefone: (51) 98614-5785 / 985357863</li>
+      
+      <li>
+        Facebook: <a href="link_para_página_no_facebook">Curtir nossa página no Facebook</a>
+      </li>
+      <li>
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=519856145785" target="_blank">
+            <i class="fa fa-whatsapp"> WhatsApp</i>
+        </a>
+        
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cancha de Futsal - Agendamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, p {
+      margin-top: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .reservation-form {
+      margin-top: 20px;
+    }
+
+    .reservation-form label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .reservation-form input[type="text"],
+    .reservation-form input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .reservation-form button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .reservation-form button:hover {
+      background-color: #555;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('reservation-form');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var nameInput = document.getElementById('name');
+        var emailInput = document.getElementById('email');
+        var dateInput = document.getElementById('date');
+        var timeInput = document.getElementById('time');
+
+        var reservationDetails = {
+          name: nameInput.value,
+          email: emailInput.value,
+          date: dateInput.value,
+          time: timeInput.value
+        };
+
+        // Aqui você pode adicionar a lógica para enviar os dados de reserva para o servidor ou fazer qualquer outra operação desejada
+
+        // Exemplo de exibição dos dados de reserva no console
+        console.log(reservationDetails);
+
+        // Exemplo de exibição de uma mensagem de sucesso
+        alert('Sua reserva foi feita com sucesso!');
+        
+        // Limpar o formulário após o envio
+        form.reset();
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>Cancha de Futsal - Agendamento</h1>
+  </div>
+
+  <div class="container">
+    <h2>Agendamento das Partidas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Segunda-feira</th>
+          <th>Terça-feira</th>
+          <th>Quarta-feira</th>
+          <th>Quinta-feira</th>
+          <th>Sexta-feira</th>
+          <th>Sábado</th>
+          <th>Domingo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 - 10:00</td>
+          <td>Livre</td>
+          <td>Livre</td>
+          <td>Livre</td>
+          <td>Livre</td>
+          <td>Livre</td>
+          <td>Livre</td>
+          <td>Livre</td>
+        </tr>
+        <!-- Outras linhas da tabela para os horários disponíveis -->
+      </tbody>
+    </table>
+
+    <div class="reservation-form">
+      <h2>Reserva de Horário</h2>
+      <form id="reservation-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+
+        <label for="date">Data:</label>
+        <input type="text" id="date" required>
+
+        <label for="time">Horário:</label>
+        <input type="text" id="time" required>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
